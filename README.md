@@ -1,12 +1,74 @@
-# React + Vite
+# Currency Converter React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based currency converter app with dynamic currency selection and live conversion using custom hooks and reusable components.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup & Installation](#setup--installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Overview
+
+This project is a responsive currency converter built with React and Tailwind CSS. It allows users to select a "From" and "To" currency, enter an amount, and convert between currencies based on live rates fetched via a custom hook.
+
+The app also includes a handy **swap** button that switches the "From" and "To" currencies instantly.
+
+---
+
+## Features
+
+- Dynamic currency list fetched via `useCurrencyInfo` hook
+- Real-time currency conversion
+- Swap button to quickly switch currencies and amounts
+- Responsive UI with Tailwind CSS styling
+- Controlled form inputs with React state
+- Form submission handling with prevention of default behavior
+
+---
+
+## 📸 Preview
+
+![App Preview](public/image/demo.png)
+
+---
+
+## Technologies Used
+
+- React (with hooks)
+- Tailwind CSS for styling
+- Custom React hooks (`useCurrencyInfo`) for data fetching
+- Functional components with props and event handlers
+
+---
+
+## Setup & Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/yourusername/currency-converter-react.git
+   cd currency-converter-react
+   ```
+
+2. **Install dependencies**
+
+  ```bash
+  npm install
+  ```
+
+3. **Start the development server**
+
+  ```bash
+  npm run dev
+  ```
