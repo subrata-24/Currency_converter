@@ -27,11 +27,14 @@ function App() {
 
   return (
     <div
-        className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
-
+          className="w-full h-screen flex flex-wrap justify-center items-center bg-cover 
+          bg-no-repeat -mt-16"
     >
+          
         <div className="w-full">
-            <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+              <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 
+              backdrop-blur-sm bg-white/30">
+                  
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
@@ -39,6 +42,7 @@ function App() {
                        
                     }}
                 >
+                      
                     <div className="w-full mb-1">
                         <InputBox
                             label="From"
@@ -48,10 +52,10 @@ function App() {
                             selectCurrency={from}
                             setAmount={setAmount}
                         />
-                      </div>
+                    </div>
 
 
-                      <button
+                    <button
                             type='button'
                             className='bg-blue-600 hover:bg-blue-700 active:bg-blue-800
                                          mx-auto block text-white font-semibold rounded-xl
@@ -61,10 +65,10 @@ function App() {
                             onClick={swap}
                             >
                             swap
-                      </button>
+                    </button>
 
 
-                      <div className='w-full mb-1'>
+                    <div className='w-full mb-1'>
                           <InputBox
                               label="To"
                               amount={convertedAmount}
@@ -72,7 +76,7 @@ function App() {
                               onCurrencyChange={(currency) => setTo(currency)}
                               selectCurrency={to}
                           />
-                      </div>
+                    </div>
 
                     <button
                         className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white 
