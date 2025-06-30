@@ -26,6 +26,12 @@ The app also includes a handy **swap** button that switches the "From" and "To" 
 
 ---
 
+## 📸 Preview
+
+![App Preview](public/image/demo.png)
+
+---
+
 ## Features
 
 - Dynamic currency list fetched via `useCurrencyInfo` hook
@@ -34,12 +40,6 @@ The app also includes a handy **swap** button that switches the "From" and "To" 
 - Responsive UI with Tailwind CSS styling
 - Controlled form inputs with React state
 - Form submission handling with prevention of default behavior
-
----
-
-## 📸 Preview
-
-![App Preview](public/image/demo.png)
 
 ---
 
@@ -63,12 +63,12 @@ The app also includes a handy **swap** button that switches the "From" and "To" 
 
 2. **Install dependencies**
 
-  ```bash
-  npm install
-  ```
+    ```bash
+    npm install
+    ```
 
 3. **Start the development server**
 
-  ```bash
-  npm run dev
-  ```
+    ```bash
+    npm run dev
+    ```
